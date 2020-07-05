@@ -1,0 +1,43 @@
+Simple Linear Regression is the most basic and easiest prediction algorithm which uses basic equations to predict the statistical output for the given data.
+The algorithm makes use of the simple line equation, i.e y = b + ax, to fit a line on the given datapoints.
+
+This method in particular, uses the Pearsons's Correlation Coefficient to calculate the slope of the line.
+
+Algorithm:
+----------
+
+  1. Calculate Pearson's Correlation Coefficient (r) with the below formula,
+            
+            r=∑(xi−mx)(yi−my)/√∑(xi−mx)2∑(yi−my)2
+            
+            where,
+            xi => observation of x
+            mx => mean(x)
+            yi => observation of y
+            my => mean(y)
+  
+  2. Calculate the slope (b) using r as follows,
+  
+            b=r(SD(y)/SD(x))
+            
+            where,
+            SD(x) => Standard Deviation of x
+            SD(y) => Standard Deviation of y
+  
+  3. Calculate the Y Intercept a using previously calculated slope b.
+  
+            a=my-b(mx)
+            
+            where,
+            my => mean(y)
+            mx => mean(x)
+            b  => previously calculated slope
+            
+  4. Now, the value for y given the value of x can be predicted from the calculated slope (b) and Intercept (a) as:
+          
+            y^=a+b(x)
+            
+            where,
+            y^ => predicted value of y
+            a  => calculated Y Intercept
+            b  => calculated Slope
