@@ -1,5 +1,5 @@
 Simple Linear Regression is the most basic and easiest prediction algorithm which uses basic equations to predict the statistical output for the given data.
-The algorithm makes use of the simple line equation, i.e y = b + ax, to fit a line on the given datapoints.
+The algorithm makes use of the simple line equation, i.e y = a + bx, to fit a line on the given datapoints.
 
 This method in particular, uses the Pearsons's Correlation Coefficient to calculate the slope of the line.
 
